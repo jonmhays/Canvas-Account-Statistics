@@ -35,7 +35,7 @@ class Find_Account_Stats
     account_stats_path = "#{@host}/api/v1/accounts/#{canvas_account_id}/analytics/terms/#{@term}/statistics"
     account_stats_result = self.class.get(account_stats_path, options)
 
-# adding the course id to a hash with unused and hidden since they don't always exist in the feed
+# adding the account id to a hash for merging with the statistics
     h1 = {"canvas_account_id" => "#{canvas_account_id}"}
 
 # merging my custom hash with the canvas feed
@@ -47,7 +47,7 @@ class Find_Account_Stats
 
   end
 
-# loading account ids using /api/v1/accounts/:account_id/sub_accounts
+# loading account ids from the accounts.csv provisioning report
   def load_canvas_account_ids
     @accounts = []
     CSV.foreach('reports/' + @config['accounts_csv'], :headers => :first_row) do |account|
