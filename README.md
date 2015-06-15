@@ -21,7 +21,7 @@ Canvas LMS system you are using this script with, you'll need to [generate an AP
 
 ## Providing CSV Report
 
-This script will work with any list of canvas course ids that the user is authorized to access.  Ideally, you can use a provisioning report for courses which will result in a file that includes the 'canvas_course_id'.
+This script will work with any list of canvas course ids that the user is authorized to access.  Ideally, you can use a provisioning report for accounts which will result in a file that includes the 'canvas_account_id'.
 
 ## Admin User access
 
