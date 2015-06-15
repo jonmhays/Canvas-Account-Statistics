@@ -1,0 +1,7 @@
+---
+  host: 'https://canvas-lms.example.com'
+  admin_token: 'admin_token_goes_here'
+  account: 'canvas_account_id_goes_here'
+  term: 'term_id'
+  accounts_csv: 'accounts.csv'
+  report_filename: 'account_stats_report.csv'
